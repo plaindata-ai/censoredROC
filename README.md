@@ -10,15 +10,16 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-
-
-```
+___cenroctest___ requires following packages to be installed 
 
 ```
+['numpy', 'pandas', 'matplotlib', 'scipy','statsmodels']
+```
+if you don't have them installed ___cenroctest___ will install the latest versions of these packages on your machine
 
 ### Installing
 
-Use the following command to install the cenroctest package from PyPi
+Use the following command to install the ___cenroctest___ package from PyPi
 
 ```
 pip install cenroctest
@@ -28,7 +29,7 @@ pip install cenroctest
 
 The main class of this package is __cenROC__
 
-In order to use the methods you have to intialise the class first like so
+In order to use the methods you have to intialise this class
 
 __cenROC(Y, M, censor, t, U = NULL, h = NULL, bw = "NR", method = "tra",
     ktype = "normal", ktype1 = "normal", B = 0, alpha = 0.05, plot = "TRUE")__
@@ -89,25 +90,25 @@ The significance level. The default is 0.05.
 
 __ROC()__
 
-Gives a ROC array
+Produces a numpy array with ROC estimations
 
 __AUC()__
 
-Gives and AUC estimate
+Produces a float showing AUC estimate
 
 __plot()__
 
 Plots the bootstrapped plot of ROC 
 
 
-### Example
+## Example
 
 Install the lifelines package to import the dataset
 
 ```
 pip install lifelines
 ```
-import the datasets from the lifelines package along with cenroc package
+Import the datasets from the lifelines package along with ___cenroctest___ package
 
 ```
 import lifelines.datasets as data
@@ -167,24 +168,6 @@ Output
 ![demo_pic](https://user-images.githubusercontent.com/48184866/183108886-26b99e69-5c8d-4df6-91a7-389c2d0c13b8.png)
 
 
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
 ## Contributing
 
 Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
@@ -195,7 +178,10 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+This package was developed by **plaindata.ai** 
+
+* **Yury Moskaltsov** - *Initial programming and package building* - [YuryMoskaltsov](https://github.com/YuryMoskaltsov)
+* **Miguel Pereira** - *Mathematical analysis, project oversight*
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
