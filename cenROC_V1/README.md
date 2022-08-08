@@ -195,4 +195,11 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 * Inspiration
 * etc
 
+## Potential bugs and improvements
+
+* Figure out translation of C function in Python correctly. Currently our function is calculating based on pure censored data instead of estimated conditional probabilities.
+* There are sometimes problems with qua variable when plotting graph
+* Youden optimal cutpoint metric is not the same in R and Python, although they are very similar. This is due to the discrepancy in the interpolation functions  scipy.interpolate.interp1d() in Python and approx() in R. This should be tested more thoroughly to achieve identical results. All other metrics in Youden function are identical.
+
+
 
