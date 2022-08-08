@@ -10,19 +10,19 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-___cenroctest___ requires following packages to be installed 
+___cenroc___ requires following packages to be installed 
 
 ```
 ['numpy', 'pandas', 'matplotlib', 'scipy','statsmodels']
 ```
-if you don't have them installed ___cenroctest___ will install the latest versions of these packages on your machine
+if you don't have them installed ___cenroc___ will install the latest versions of these packages on your machine
 
 ### Installing
 
-Use the following command to install the ___cenroctest___ package from PyPi
+Use the following command to install the ___cenroc___ package from PyPi
 
 ```
-pip install cenroctest
+pip install cenroc
 ```
 
 ## Main class
@@ -108,11 +108,11 @@ Install the lifelines package to import the dataset
 ```
 pip install lifelines
 ```
-Import the datasets from the lifelines package along with ___cenroctest___ package
+Import the datasets from the lifelines package along with ___cenroc___ package
 
 ```
 import lifelines.datasets as data
-from cenroctest import cenROC
+from cenroc import cenROC
 
 df_test = data.load_panel_test()
 
