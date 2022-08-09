@@ -125,17 +125,17 @@ print(cenROC_test1.ROC())
 Output
 
 ```
-0.110000
-0.177072
-0.207249
-0.228440
-0.245245
-0.259397
-0.271749
-0.282792
-0.292835
-0.302087
-0.310696
+0.110795
+0.180722
+0.212862
+0.235690
+0.253942
+0.269407
+0.282974
+0.295154
+0.306269
+0.316538
+0.326117
 ...
 ```
 
@@ -150,7 +150,7 @@ print(cenROC_test2.AUC())
 Output
 
 ```
-0.6287878787878787
+0.6742424242424243
 ```
 
 Due to the stochastic nature of bootstraping the graphs will be different each time.
@@ -165,9 +165,8 @@ cenROC_test1.plot()
 
 Output
 
+!![output_example](https://user-images.githubusercontent.com/48184866/183537148-d11d7333-47ca-4d1e-a1af-a55ef1e85a97.png)
 
-
-![output_example](https://user-images.githubusercontent.com/48184866/183537148-d11d7333-47ca-4d1e-a1af-a55ef1e85a97.png)
 
 ## Contributing
 
