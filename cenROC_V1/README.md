@@ -2,7 +2,7 @@
 
 CensoredROC allows the computation of the time-dependent ROC curve for right censored survival data using the cumulative sensitivity and dynamic specificity definitions. The ROC curves can be either empirical (non-smoothed) or smoothed with/wtihout boundary correction. It also calculates the time-dependent area under the ROC curve (AUC), the Youden index and can define an optimal cutoff for an independent continuous variables based on the Youden idex.
 
-This package is based on the cenROC package that exists for R (https://cran.rstudio.com/web/packages/cenROC/index.html). The main idea was to allow Python users to apply the same tools.
+This package is based on the cenROC package that exists for R. The main idea was to allow Python users to apply the same tools.
 
 ## Getting Started
 
@@ -197,12 +197,13 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ## References
 
 * Beyene KM, El Ghouch A. Time-dependent ROC curve estimation for interval-censored data. Biom J. 2022 May 6. doi: 10.1002/bimj.202000382. PMID: 35523738.
-* cenROC R package: . FYI the package is no longer on CRAN (according to the repo: `Archived on 2022-04-25 as email to the maintainer was undeliverable.` The archived versions can be downloaded here: https://cran.r-project.org/src/contrib/Archive/cenROC/
+* cenROC R package: . FYI the package is no longer on CRAN (according to the repo: *Archived on 2022-04-25 as email to the maintainer was undeliverable.*). The archived versions can be downloaded here: https://cran.r-project.org/src/contrib/Archive/cenROC/
 
 ## Improvements to be made/Planned additional features
 
-* There is a slight discrepancy in the optimal cutpoint metric based on the Youden index obtained in here and the one obtained using the cenROC package in R. This is due to a discrepancy in the interpolation functions scipy.interpolate.interp1d() in Python and approx() in R. This should be tested more thoroughly to achieve identical results. The other metrics were compared with the R output and there are no differences.
-* Add a function that calculates the optimal cutpoint for a continuous variables based on the log-rank test (akin to the survminer::survcutpoint function that exists in R)
+* There is a slight discrepancy in the optimal cutpoint metric based on the Youden index obtained here and the one obtained using the cenROC package in R. This is due to a discrepancy in the interpolation functions scipy.interpolate.interp1d() in Python and approx() in R. This should be tested more thoroughly to achieve identical results. The other metrics were compared with the R output and there are no differences.
+* Add a function that calculates the optimal cutpoint for a continuous variables based on the log-rank test (akin to the survminer::survcutpoint function that exists in R).
+* Let us know of other related functions that would be useful additions.
 
 
 
