@@ -181,7 +181,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 This package was developed by **plaindata.ai** 
 
 * **Yury Moskaltsov** - *Initial programming and package building* - [YuryMoskaltsov](https://github.com/YuryMoskaltsov)
-* **Miguel Pereira** - *Mathematical analysis, project oversight* - [miguelmspereira](https://github.com/miguelmspereira)
+* **Miguel Pereira** - *Mathematical analysis and implementation, project oversight* - [miguelmspereira](https://github.com/miguelmspereira)
 
 ## License
 
@@ -201,7 +201,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 * There is a slight discrepancy in the optimal cutpoint metric based on the Youden index obtained here and the one obtained using the cenROC package in R. This is due to a discrepancy in the interpolation functions scipy.interpolate.interp1d() in Python and approx() in R. This should be tested more thoroughly to achieve identical results. The other metrics were compared with the R output and there are no differences.
 * Add a function that calculates the optimal cutpoint for a continuous variables based on the log-rank test (akin to the survminer::survcutpoint function that exists in R).
-* Let us know of other related functions that would be useful additions.
+* Let us know of other functions that would be useful additions.
 
 
 
