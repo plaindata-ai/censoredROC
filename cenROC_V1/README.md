@@ -125,17 +125,17 @@ print(cenROC_test1.ROC())
 Output
 
 ```
-0.110000
-0.177072
-0.207249
-0.228440
-0.245245
-0.259397
-0.271749
-0.282792
-0.292835
-0.302087
-0.310696
+0.110795
+0.180722
+0.212862
+0.235690
+0.253942
+0.269407
+0.282974
+0.295154
+0.306269
+0.316538
+0.326117
 ...
 ```
 
@@ -150,7 +150,7 @@ print(cenROC_test2.AUC())
 Output
 
 ```
-0.6287878787878787
+0.6742424242424243
 ```
 
 Due to the stochastic nature of bootstraping the graphs will be different each time.
@@ -164,8 +164,7 @@ cenROC_test1.plot()
 ```
 
 Output
-
-![demo_pic](https://user-images.githubusercontent.com/48184866/183108886-26b99e69-5c8d-4df6-91a7-389c2d0c13b8.png)
+![output_example](https://user-images.githubusercontent.com/48184866/183535427-bedfe0a0-4d73-4461-96f2-f0f810605884.png)
 
 
 ## Contributing
@@ -195,4 +194,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 * Inspiration
 * etc
 
+## Potential bugs and improvements
 
+* Figure out translation of C function in Python correctly. Currently our function is calculating based on pure censored data instead of estimated conditional probabilities.
+* Youden optimal cutpoint metric is not the same in R and Python, although they are very similar. This is due to the discrepancy in the interpolation functions. scipy.interpolate.interp1d() in Python and approx() in R. This should be tested more thoroughly to achieve identical results. All other metrics in Youden function are identical.
