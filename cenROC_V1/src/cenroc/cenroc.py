@@ -3,9 +3,9 @@ This module implements the censored ROC curve estimation.
 Author: Yury Moskaltsov from plaindata.ai
 """
 
-__author__ = "Yury Moskaltsov, plaindata.ai"
-__email__ = "yury-m@hotmail.com.com"
-__status__ = "planning"
+__author__ = "Yury Moskaltsov/ Miguel Pereira, plaindata.ai"
+__email__ = "yury.moskaltsov@plaindata.ai/ miguel.pereira@plaindata.ai"
+__status__ = "Version 1 deployed"
 
 
 import numpy as np
