@@ -10,19 +10,19 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-___cenroctest___ requires following packages to be installed 
+___cenroc___ requires following packages to be installed 
 
 ```
 ['numpy', 'pandas', 'matplotlib', 'scipy','statsmodels']
 ```
-if you don't have them installed ___cenroctest___ will install the latest versions of these packages on your machine
+if you don't have them installed ___cenroc___ will install the latest versions of these packages on your machine
 
 ### Installing
 
-Use the following command to install the ___cenroctest___ package from PyPi
+Use the following command to install the ___cenroc___ package from PyPi
 
 ```
-pip install cenroctest
+pip install cenroc
 ```
 
 ## Main class
@@ -108,11 +108,11 @@ Install the lifelines package to import the dataset
 ```
 pip install lifelines
 ```
-Import the datasets from the lifelines package along with ___cenroctest___ package
+Import the datasets from the lifelines package along with ___cenroc___ package
 
 ```
 import lifelines.datasets as data
-from cenroctest import cenROC
+from cenroc import cenROC
 
 df_test = data.load_panel_test()
 
@@ -125,17 +125,17 @@ print(cenROC_test1.ROC())
 Output
 
 ```
-0.110795
-0.180722
-0.212862
-0.235690
-0.253942
-0.269407
-0.282974
-0.295154
-0.306269
-0.316538
-0.326117
+0.110000
+0.177072
+0.207249
+0.228440
+0.245245
+0.259397
+0.271749
+0.282792
+0.292835
+0.302087
+0.310696
 ...
 ```
 
@@ -150,7 +150,7 @@ print(cenROC_test2.AUC())
 Output
 
 ```
-0.6742424242424243
+0.6287878787878787
 ```
 
 Due to the stochastic nature of bootstraping the graphs will be different each time.
@@ -164,7 +164,8 @@ cenROC_test1.plot()
 ```
 
 Output
-![output_example](https://user-images.githubusercontent.com/48184866/183535427-bedfe0a0-4d73-4461-96f2-f0f810605884.png)
+
+![demo_pic](https://user-images.githubusercontent.com/48184866/183108886-26b99e69-5c8d-4df6-91a7-389c2d0c13b8.png)
 
 
 ## Contributing
@@ -198,3 +199,6 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 * Figure out translation of C function in Python correctly. Currently our function is calculating based on pure censored data instead of estimated conditional probabilities.
 * Youden optimal cutpoint metric is not the same in R and Python, although they are very similar. This is due to the discrepancy in the interpolation functions. scipy.interpolate.interp1d() in Python and approx() in R. This should be tested more thoroughly to achieve identical results. All other metrics in Youden function are identical.
+
+
+
