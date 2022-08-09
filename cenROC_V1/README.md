@@ -165,8 +165,9 @@ cenROC_test1.plot()
 
 Output
 
-![demo_pic](https://user-images.githubusercontent.com/48184866/183108886-26b99e69-5c8d-4df6-91a7-389c2d0c13b8.png)
 
+
+![output_example](https://user-images.githubusercontent.com/48184866/183537148-d11d7333-47ca-4d1e-a1af-a55ef1e85a97.png)
 
 ## Contributing
 
